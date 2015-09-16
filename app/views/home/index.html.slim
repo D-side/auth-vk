@@ -1,0 +1,6 @@
+h1 Hi!
+- if user_signed_in?
+  h2 Wow. Such user.
+- else
+  = link_to user_omniauth_authorize_path(:vkontakte) do
+    h2 Authorize via VK?
